@@ -6,7 +6,7 @@ export default function NavBar(props) {
     const { active } = props;
     return (
         <div className='nav-container'>
-            <nav className='navbar'>
+            <nav className='nav'>
                 <div className='nav-background'>
                     <ul className='nav-list'>
                         <li

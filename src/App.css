@@ -28,7 +28,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width: calc((100% - 1200px) / 2);
+    width: calc((100% - 1200px) / 3);
     background-color: #fafafa;
     border: 1px solid #f4f4f5;
 }
@@ -51,7 +51,7 @@
 .title {
     color: var(--primary-color);
     font-family: var(--secondary-font);
-    font-size: 45px;
+    font-size: 25px;
     font-weight: 700;
     width: 70%;
 }

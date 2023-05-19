@@ -1,53 +1,60 @@
 import React from "react";
-import "./styles/Slider.css";
-import slide1 from "../assets/imgs/m_slide200.png";
-import slide2 from "../assets/imgs/m_slide201.png";
-import slide3 from "../assets/imgs/m_slide202.png";
-import slide4 from "../assets/imgs/slide200.png";
-import slide5 from "../assets/imgs/slide201.png";
-import Glider from "react-glider";
-import "glider-js/glider.min.css";
-import glide from "@glidejs/glide";
+import "@coreui/coreui/dist/css/coreui.min.css";
+import {
+    CContainer,
+    CCarousel,
+    CCarouselItem,
+    CImage,
+    CCarouselCaption,
+} from "@coreui/react";
+import img1 from "../assets/imgs/onedream.png";
+import img2 from "../assets/imgs/uhak.png";
+import img3 from "../assets/imgs/leapin.png";
 
 export default function Slider() {
     return (
-        <>
-            <div className='container'>
-                <Glider
-                    className='glider-container'
-                    draggable
-                    hasDots
-                    slidesToShow={1}
-                    scrollLock
-                    hasArrows
-                    arrows={{
-                        prev: "#buttonPrev",
-                        next: "#buttonNext",
-                    }}
-                >
-                    <div className='slide'>
-                        <div className='slide__description__left'>
-                            {/* <p>One Dream Community</p> */}
-                        </div>
-
-                        <img src={slide4} alt='' />
-                    </div>
-                    <div className='slide'>
-                        <div className='slide__description__left'>
-                            <p>One Dream Community</p>
-                        </div>
-
-                        <img src={slide2} alt='' />
-                    </div>
-                    <div className='slide'>
-                        <div className='slide__description__left'>
-                            <p>One Dream Community</p>
-                        </div>
-
-                        <img src={slide1} alt='' />
-                    </div>
-                </Glider>
-            </div>
-        </>
+        <CContainer className='w-100'>
+            <h5>The Companies i worked...</h5>
+            <CCarousel controls transition='crossfade' interval={(true, 3000)}>
+                <CCarouselItem>
+                    <CImage
+                        className='d-block w-100'
+                        src={img1}
+                        alt='slide 1'
+                        height={340}
+                    />
+                    <CCarouselCaption className='d-none d-md-block '>
+                        <h2 style={{ color: "white" }}>
+                            <strong>One Dream Community PTY LTD</strong>
+                        </h2>
+                    </CCarouselCaption>
+                </CCarouselItem>
+                <CCarouselItem>
+                    <CImage
+                        className='d-block w-100'
+                        src={img2}
+                        alt='slide 2'
+                        height={340}
+                    />
+                    {/* <CCarouselCaption className='d-none d-md-block'>
+                        <h2 style={{ color: "black" }}>
+                            <strong>UHAK STATION</strong>
+                        </h2>
+                        <h5 style={{ color: "black" }}>
+                            Some representative placeholder content for the
+                            first slide.
+                        </h5>
+                    </CCarouselCaption> */}
+                </CCarouselItem>
+                <CCarouselItem>
+                    <CImage
+                        className='d-block w-100'
+                        src={img3}
+                        alt='slide 3'
+                        height={340}
+                    />
+                </CCarouselItem>
+            </CCarousel>
+        </CContainer>
     );
 }

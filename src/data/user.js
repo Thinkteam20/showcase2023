@@ -16,7 +16,8 @@ export const INFO = {
     },
 
     homepage: {
-        title: "Full-stack web and mobile app developer, and amateur astronaut.",
+        title: "Full-stack web and .Net developer",
+        greeting: ` I am Sangpil Jung.`,
         description:
             "I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies. I enjoy solving complex problems and learning new skills. I am passionate about creating high-quality code that follows best practices and industry standards. I am always looking for new challenges and opportunities to grow as a developer.",
     },
@@ -35,28 +36,27 @@ export const INFO = {
 
     projects: [
         {
-            title: "Project 1",
+            title: "Covid-Tracker2023",
             description:
                 "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-            logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+            logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
             linkText: "View Project",
             link: "https://github.com",
         },
 
         {
-            title: "Project 2",
+            title: "EPL notification",
             description:
                 "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-            logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/python/python.png",
+            logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg",
             linkText: "View Project",
             link: "https://github.com",
         },
-
         {
-            title: "Project 3",
+            title: "Scheduller",
             description:
                 "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
-            logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
+            logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg",
             linkText: "View Project",
             link: "https://github.com",
         },
@@ -75,6 +75,23 @@ export const INFO = {
             description:
                 "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
             logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+            linkText: "View Project",
+            link: "https://github.com",
+        },
+        {
+            title: "Covid-Tracker2023",
+            description:
+                "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+            logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+            linkText: "View Project",
+            link: "https://github.com",
+        },
+
+        {
+            title: "Covid-Tracker2023",
+            description:
+                "Lorem ipsum dolor sit amet. Et incidunt voluptatem ex tempore repellendus qui dicta nemo sit deleniti minima.",
+            logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
             linkText: "View Project",
             link: "https://github.com",
         },

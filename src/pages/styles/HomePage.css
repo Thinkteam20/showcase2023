@@ -13,8 +13,13 @@
 
 .homepage-first-area {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+.testing {
+    display: flex;
+    width: 100%;
 }
 
 .homepage-first-area-left-side {
@@ -26,7 +31,19 @@
 .homepage-title {
     width: 85% !important;
 }
-
+.left-side-title-right {
+}
+.homepage-title {
+}
+.homepage-greeting {
+    font-size: 35px;
+    background: linear-gradient(60deg, #8456ec 24.2%, #e87bf8 120.46%);
+    background-clip: text;
+    color: transparent;
+}
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.75);
+}
 .homepage-subtitle {
     width: 85% !important;
 }
