@@ -28,7 +28,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width: calc((100% - 1200px) / 3);
+    /* width: calc((100% - 1200px) / 3); */
     background-color: #fafafa;
     border: 1px solid #f4f4f5;
 }
