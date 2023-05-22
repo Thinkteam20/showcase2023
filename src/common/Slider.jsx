@@ -19,7 +19,7 @@ export default function Slider() {
             data-aos-offset='200'
         >
             <CContainer className='w-100'>
-                <h5>The Companies i worked...</h5>
+                <h3>The Companies i worked...</h3>
                 <CCarousel
                     controls
                     transition='crossfade'

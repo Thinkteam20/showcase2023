@@ -3,8 +3,8 @@ import "./styles/About.css";
 import { INFO } from "../data/user";
 import NavBar from "../common/NavBar";
 import Footer from "../common/Footer";
-import Socials from "../components/about/Socials";
 import aboutimg from "../assets/imgs/about.jpg";
+import Works from "../components/Works";
 
 export default function About() {
     useEffect(() => {
@@ -39,13 +39,11 @@ export default function About() {
                                         />
                                     </div>
                                 </div>
-
-                                <div className='about-socials'></div>
                             </div>
                         </div>
-                        <div className='about-socials-mobile'>
-                            <Socials />
-                        </div>
+                    </div>
+                    <div className='about-socials'>
+                        <Works />
                     </div>
                     <div className='page-footer'>
                         <Footer />

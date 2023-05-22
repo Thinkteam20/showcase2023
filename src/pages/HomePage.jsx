@@ -3,7 +3,7 @@ import NavBar from "../common/NavBar";
 import AllProjects from "../projects/AllProjects";
 import Slider from "../common/Slider";
 import "./styles/HomePage.css";
-import { INFO } from "../data/user";
+import Article from "../components/Article";
 import Footer from "../common/Footer";
 import {
     CCallout,
@@ -15,8 +15,11 @@ import {
 import { getDayOfWeek } from "../utils/getDayOfWeek";
 import visa from "../assets/imgs/visa.jpeg";
 import resume from "../assets/imgs/resume.png";
-import location from "../assets/imgs/location.webp";
+import qut from "../assets/imgs/qut.jpeg";
 import hr from "../assets/curve-hr.svg";
+
+import { INFO } from "../data/user";
+import myArticles from "../data/articles";
 
 export default function HomePage() {
     const now = new Date();
@@ -49,7 +52,7 @@ export default function HomePage() {
 
                                 <Slider />
                                 <div class='text-teal text-opacity-75'>
-                                    <CCallout color='warning'>
+                                    <CCallout color='dark'>
                                         {INFO.homepage.description}
                                         {/* </div> */}
                                     </CCallout>
@@ -100,7 +103,7 @@ export default function HomePage() {
                                 data-aos-duration='500'
                                 data-aos-offset='100'
                             >
-                                <img src={location} alt='' />
+                                <img src={qut} alt='' />
                                 <div class='block__description'>
                                     <h3>BRISBANE,QUEENSLAND</h3>
                                     <span>
@@ -189,6 +192,35 @@ export default function HomePage() {
                         <div className='homepage-projects'>
                             <AllProjects />
                         </div>
+
+                        <div className='homepage-after-title'>
+                            <div className='divider'>
+                                <div>
+                                    <h3 className='divider-title'>03.</h3>
+                                    <h3>Award and Certificate</h3>
+                                </div>
+                                <div className='divider-line'>
+                                    <img src={hr} alt='hr' className='hrline' />
+                                </div>
+                            </div>
+                            <div className='homepage-articles'>
+                                {myArticles.map((article, index) => (
+                                    <div
+                                        className='homepage-article'
+                                        key={(index + 1).toString()}
+                                    >
+                                        <Article
+                                            key={(index + 1).toString()}
+                                            date={article().date}
+                                            title={article().title}
+                                            description={article().description}
+                                            link={"/article/" + (index + 1)}
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
                         <div className='page-footer'>
                             <Footer />
                         </div>

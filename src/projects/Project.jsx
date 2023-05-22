@@ -9,7 +9,12 @@ export default function Project(props) {
 
     return (
         <React.Fragment>
-            <div className='project'>
+            <div
+                className='project'
+                data-aos='fade-up'
+                data-aos-duration='500'
+                data-aos-offset='100'
+            >
                 <Link to={link}>
                     <div className='project-container'>
                         <div className='project-logo'>
