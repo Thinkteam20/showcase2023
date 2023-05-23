@@ -20,6 +20,7 @@ import hr from "../assets/curve-hr.svg";
 
 import { INFO } from "../data/user";
 import myArticles from "../data/articles";
+import pdf from "../assets/resume.pdf";
 
 export default function HomePage() {
     const now = new Date();
@@ -80,7 +81,14 @@ export default function HomePage() {
                                 <img src={visa} alt='' />
                                 <div class='block__description'>
                                     <h3>485VISA</h3>
-                                    <span>More Info below</span>
+                                    <span>
+                                        <a
+                                            href='https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-study-work'
+                                            className='info-link'
+                                        >
+                                            More Info
+                                        </a>
+                                    </span>
                                 </div>
                             </div>
                             <div
@@ -93,7 +101,9 @@ export default function HomePage() {
                                 <div class='block__description'>
                                     <h3>DOWNLOAD RESUME</h3>
                                     <span>
-                                        <a href=''>DOWNLOAD</a>
+                                        <a href={pdf} className='info-link'>
+                                            DOWNLOAD
+                                        </a>
                                     </span>
                                 </div>
                             </div>
@@ -105,9 +115,9 @@ export default function HomePage() {
                             >
                                 <img src={qut} alt='' />
                                 <div class='block__description'>
-                                    <h3>BRISBANE,QUEENSLAND</h3>
+                                    <h3>MAJOR</h3>
                                     <span>
-                                        Happy to relocate for new position
+                                        Bachelor of Information Technology
                                     </span>
                                 </div>
                             </div>
@@ -119,60 +129,60 @@ export default function HomePage() {
                             <CAccordionItem itemKey={1}>
                                 <CAccordionHeader>VISA</CAccordionHeader>
                                 <CAccordionBody>
+                                    <img
+                                        src='https://media.licdn.com/dms/image/D5635AQFx0pNWGHwUdA/profile-framedphoto-shrink_400_400/0/1683174456058?e=1685422800&v=beta&t=X4yEaolM9_fZlNE31U94p6TlAGOJmDwIxbN5dX8K6WY'
+                                        alt=''
+                                        className='work-image'
+                                    />{" "}
+                                    <br />
                                     <strong>
-                                        This is the first item's accordion body.
+                                        I am currently holdning an Subclass 485
+                                        VISA
                                     </strong>{" "}
-                                    It is hidden by default, until the collapse
-                                    plugin adds the appropriate classes that we
-                                    use to style each element. These classes
-                                    control the overall appearance, as well as
-                                    the showing and hiding via CSS transitions.
-                                    You can modify any of this with custom CSS
-                                    or overriding our default variables. It's
-                                    also worth noting that just about any HTML
-                                    can go within the{" "}
-                                    <code>.accordion-body</code>, though the
-                                    transition does limit overflow.
+                                    It is Post-Study Work stream This visa is
+                                    for international students who have recently
+                                    graduated with a degree from an Australian
+                                    institution. It lets you live, work and
+                                    study in Australia, temporarily.
+                                    <br />{" "}
+                                    <code>expire data:December 2024</code>
                                 </CAccordionBody>
                             </CAccordionItem>
                             <CAccordionItem itemKey={2}>
                                 <CAccordionHeader>LOCATION</CAccordionHeader>
                                 <CAccordionBody>
-                                    <strong>
-                                        This is the second item's accordion
-                                        body.
-                                    </strong>{" "}
-                                    It is hidden by default, until the collapse
-                                    plugin adds the appropriate classes that we
-                                    use to style each element. These classes
-                                    control the overall appearance, as well as
-                                    the showing and hiding via CSS transitions.
-                                    You can modify any of this with custom CSS
-                                    or overriding our default variables. It's
-                                    also worth noting that just about any HTML
-                                    can go within the{" "}
-                                    <code>.accordion-body</code>, though the
-                                    transition does limit overflow.
+                                    <img
+                                        src='https://media.licdn.com/dms/image/D5635AQFx0pNWGHwUdA/profile-framedphoto-shrink_400_400/0/1683174456058?e=1685422800&v=beta&t=X4yEaolM9_fZlNE31U94p6TlAGOJmDwIxbN5dX8K6WY'
+                                        alt=''
+                                        className='work-image'
+                                    />{" "}
+                                    <br />
+                                    <strong>Brisbane,QLD</strong> “I’m happy to
+                                    consider relocating if the job’s a good fit.
+                                    Also I am open to an opportunity remote work
+                                    environment or out of the office in Brisbane
+                                    I’d love to discuss that as well.{" "}
+                                    <code>
+                                        Preffered locations: Brisbane, Gold
+                                        Coast, Perth, Tasmania{" "}
+                                    </code>
                                 </CAccordionBody>
                             </CAccordionItem>
                             <CAccordionItem itemKey={3}>
-                                <CAccordionHeader>RESUME</CAccordionHeader>
+                                <CAccordionHeader>EDUCATION</CAccordionHeader>
                                 <CAccordionBody>
+                                    <img
+                                        src='https://media.licdn.com/dms/image/D5635AQFx0pNWGHwUdA/profile-framedphoto-shrink_400_400/0/1683174456058?e=1685422800&v=beta&t=X4yEaolM9_fZlNE31U94p6TlAGOJmDwIxbN5dX8K6WY'
+                                        alt=''
+                                        className='work-image'
+                                    />{" "}
+                                    <br />
                                     <strong>
-                                        This is the second item's accordion
-                                        body.
+                                        Queensland University of Technology
                                     </strong>{" "}
-                                    It is hidden by default, until the collapse
-                                    plugin adds the appropriate classes that we
-                                    use to style each element. These classes
-                                    control the overall appearance, as well as
-                                    the showing and hiding via CSS transitions.
-                                    You can modify any of this with custom CSS
-                                    or overriding our default variables. It's
-                                    also worth noting that just about any HTML
-                                    can go within the{" "}
-                                    <code>.accordion-body</code>, though the
-                                    transition does limit overflow.
+                                    Bachelor of Information Technology, Major:
+                                    Computer Science.{" "}
+                                    <code>Graduated in August,2021</code>
                                 </CAccordionBody>
                             </CAccordionItem>
                         </CAccordion>

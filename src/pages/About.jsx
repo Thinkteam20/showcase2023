@@ -38,6 +38,10 @@ export default function About() {
                                             className='about-image'
                                         />
                                     </div>
+                                    {/* <a href='/' className='not-found-link'>
+                                        Linkedin
+                                        <AiFillLinkedin size={40} />
+                                    </a> */}
                                 </div>
                             </div>
                         </div>

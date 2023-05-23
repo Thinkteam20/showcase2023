@@ -27,7 +27,7 @@ export default function Footer() {
                 <div className='footer-links'>
                     <div>
                         {accounts.map((details) => (
-                            <a href='' className='link'>
+                            <a href={details.url} className='link'>
                                 {details.icon}
                             </a>
                         ))}

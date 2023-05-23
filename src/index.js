@@ -4,22 +4,24 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import NotFound from "./pages/NotFound";
+import Notfound from "./pages/404";
 import HomePage from "./pages/HomePage";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Articles from "./pages/Articles";
+import Contact from "./pages/Contact";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
-        errorElement: <NotFound />,
+        errorElement: <Notfound />,
         children: [
             { index: true, element: <HomePage /> },
             { path: "about", element: <About /> },
             { path: "projects", element: <Projects /> },
             { path: "articles", element: <Articles /> },
+            { path: "contact", element: <Contact /> },
         ],
     },
 ]);
